@@ -79,21 +79,21 @@ export default function ProjectsPage({ onNavigate }: ProjectsPageProps) {
       </div>
 
       {/* Giant OP Background */}
-      <div className="absolute top-1/2 left-[10%] -translate-y-1/2 text-[40vw] font-bold text-white/[0.02] leading-none pointer-events-none select-none tracking-tighter z-0">
+      <div className="absolute top-1/2 left-[10%] -translate-y-1/2 text-[40vw] font-bold text-white/2 leading-none pointer-events-none select-none tracking-tighter z-0">
         OP
       </div>
 
       {/* Vertical Texts */}
       <div className="hidden lg:flex absolute left-8 top-1/2 -translate-y-1/2 -rotate-90 items-center gap-4 text-[10px] font-mono tracking-[0.3em] text-white/40 origin-center z-10">
         <span>PORTFOLIO</span>
-        <div className="w-12 h-[1px] bg-white/40"></div>
+        <div className="w-12 h-px bg-white/40"></div>
       </div>
       <div className="hidden lg:block absolute right-8 top-1/2 -translate-y-1/2 rotate-90 text-[10px] font-mono tracking-[0.3em] text-white/40 origin-center z-10">
         SCROLL DOWN
       </div>
 
       {/* Main Content Grid */}
-      <div className="max-w-[1400px] mx-auto w-full h-full min-h-screen px-6 md:px-24 pt-32 pb-12 flex flex-col justify-center relative z-10">
+      <div className="max-w-350 mx-auto w-full h-full min-h-screen px-6 md:px-24 pt-32 pb-12 flex flex-col justify-center relative z-10">
         <AnimatePresence mode="wait">
           <motion.div 
             key={currentIndex}
@@ -117,7 +117,7 @@ export default function ProjectsPage({ onNavigate }: ProjectsPageProps) {
                 <div className="flex-1 border-t-2 border-orange-500 pt-4">
                   <div className="flex gap-4">
                     <span className="text-[10px] font-mono text-white/60 font-bold">01</span>
-                    <p className="text-sm text-white/80 leading-snug max-w-[140px] whitespace-pre-line">
+                    <p className="text-sm text-white/80 leading-snug max-w-35 whitespace-pre-line">
                       {project.feature1}
                     </p>
                   </div>
@@ -125,7 +125,7 @@ export default function ProjectsPage({ onNavigate }: ProjectsPageProps) {
                 <div className="flex-1 border-t-2 border-orange-500 pt-4">
                   <div className="flex gap-4">
                     <span className="text-[10px] font-mono text-white/60 font-bold">02</span>
-                    <p className="text-sm text-white/80 leading-snug max-w-[140px] whitespace-pre-line">
+                    <p className="text-sm text-white/80 leading-snug max-w-35 whitespace-pre-line">
                       {project.feature2}
                     </p>
                   </div>
@@ -137,7 +137,7 @@ export default function ProjectsPage({ onNavigate }: ProjectsPageProps) {
             <div className="lg:col-span-5 flex flex-col h-full justify-between lg:pl-12 mt-12 lg:mt-0">
               
               <div className="mb-24 lg:mb-0 lg:mt-12">
-                <p className="text-[13px] leading-[1.8] text-white/70 mb-8 max-w-[280px]">
+                <p className="text-[13px] leading-[1.8] text-white/70 mb-8 max-w-70">
                   {project.desc}
                 </p>
                 <div className="flex items-center gap-6">
@@ -163,18 +163,18 @@ export default function ProjectsPage({ onNavigate }: ProjectsPageProps) {
                   <ArrowRight size={16} className="text-white" />
                 </button>
 
-                <div className="w-full max-w-[360px]">
+                <div className="w-full max-w-90">
                   <div className="flex items-center justify-end gap-3 mb-3">
                     <span className="text-[10px] font-mono text-white/50">{project.date}</span>
                     <span className="w-1 h-1 rounded-full bg-orange-500"></span>
                     <span className="text-[10px] font-mono text-white/50">{project.tag}</span>
                   </div>
-                  <h4 className="text-[14px] font-medium text-white leading-[1.5] text-right mb-6 whitespace-pre-line">
+                  <h4 className="text-[14px] font-medium text-white leading-normal text-right mb-6 whitespace-pre-line">
                     {project.cardTitle}
                   </h4>
                   
-                  <div className="flex h-[180px] w-full bg-[#1a1a1a]">
-                    <div className="w-[100px] flex items-center justify-center border-r border-white/5">
+                  <div className="flex h-45 w-full bg-[#1a1a1a]">
+                    <div className="w-25 flex items-center justify-center border-r border-white/5">
                       <span className="text-3xl font-light">0{project.id}</span>
                     </div>
                     <div className="flex-1 relative overflow-hidden">

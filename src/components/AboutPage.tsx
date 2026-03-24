@@ -8,16 +8,16 @@ export default function AboutPage() {
       animate={{ opacity: 1, filter: 'blur(0px)' }}
       exit={{ opacity: 0, filter: 'blur(10px)' }}
       transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
-      className="max-w-[1400px] w-full mx-auto px-6 md:px-12 pt-8 lg:pt-32 relative z-10 flex flex-col lg:block pb-12 lg:pb-0 flex-grow min-h-screen"
+      className="max-w-350 w-full mx-auto px-6 md:px-12 pt-8 lg:pt-32 relative z-10 flex flex-col lg:block pb-12 lg:pb-0 grow min-h-screen"
     >
       {/* Left Column */}
       <div className="max-w-xl relative z-10">
-        <h1 className="font-['Orbitron'] text-[3.5rem] sm:text-[4.5rem] md:text-[5.5rem] leading-[1] md:leading-[0.95] font-bold tracking-wide text-white mb-6 md:mb-8 drop-shadow-lg">
+        <h1 className="font-['Orbitron'] text-[clamp(2.25rem,13vw,5.5rem)] leading-none md:leading-[0.95] font-bold tracking-[0.02em] sm:tracking-wide text-white mb-6 md:mb-8 drop-shadow-lg pr-2">
           ROSHAN// <br />
-          ARCHITECT<br />
+          PORTFOLIO<br />
         </h1>
         
-        <p className="text-[12px] md:text-[13px] leading-[1.8] text-white/80 max-w-[380px] mb-8 md:mb-10 drop-shadow-md">
+        <p className="text-[12px] md:text-[13px] leading-[1.8] text-white/80 max-w-95 mb-8 md:mb-10 drop-shadow-md">
           Developed with high-end skills and a pixel-perfect frame for those who don't just browse the web—they build it. Code your dreams...
         </p>
 
@@ -35,7 +35,7 @@ export default function AboutPage() {
       </div>
 
       {/* Right Column - Specs */}
-      <div className="relative mt-12 lg:absolute lg:right-12 lg:top-[35%] lg:mt-0 w-full lg:w-[380px] z-10">
+      <div className="relative mt-12 lg:absolute lg:right-12 lg:top-[35%] lg:mt-0 w-full lg:w-95 z-10">
         <h3 className="text-[11px] font-mono tracking-[0.2em] text-white/90 mb-6 md:mb-8 font-bold">
           TECHNICAL SPECS
         </h3>

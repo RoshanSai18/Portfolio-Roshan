@@ -2,19 +2,44 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+# Roshan Portfolio
 
-This contains everything you need to run your app locally.
+A personal portfolio website built with React, TypeScript, and Vite.
 
-View your app in AI Studio: https://ai.studio/apps/a8eb6af9-65f3-4045-9f29-2ee282513449
+This site showcases:
+- About/profile information
+- Project highlights
+- Animated transitions and visual effects
+
+## Tech Stack
+
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Motion
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
+Prerequisite: Node.js
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+2. Start the development server:
    `npm run dev`
+3. Open the app in your browser:
+   `http://localhost:3000`
+
+## Build for Production
+
+1. Create a production build:
+   `npm run build`
+2. Preview the build locally:
+   `npm run preview`
+
+## Project Structure
+
+- `src/components/AboutPage.tsx` - About section
+- `src/components/ProjectsPage.tsx` - Projects section
+- `src/components/LoadingScreen.tsx` - Intro/loading animation
+- `src/App.tsx` - Main app flow and page transitions
